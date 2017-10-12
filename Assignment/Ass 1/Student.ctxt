@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=number\ name
+comment0.target=Student(java.lang.String,\ java.lang.String)
+comment1.params=
+comment1.target=java.lang.String\ getNumber()
+comment2.params=
+comment2.target=void\ stuMenu()
+comment3.params=
+comment3.target=void\ stuView()
+comment4.params=
+comment4.target=void\ stuEnrol()
+comment5.params=
+comment5.target=void\ stuWithdraw()
+comment6.params=
+comment6.target=void\ stuHelp()
+comment7.params=
+comment7.target=char\ ReadChoice()
+comment8.params=
+comment8.target=int\ readNumber()
+comment9.params=
+comment9.target=java.lang.String\ toString()
+numComments=10

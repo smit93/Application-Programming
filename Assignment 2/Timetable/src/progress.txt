@@ -1,0 +1,134 @@
+Launch the application
+[y] The UTS Logo is shown
+[y] The "Timetable System" heading is shown
+[y] "No students" is shown in the empty list
+[y] "Add Student" appears and is enabled
+[y] "Remove Student" appears and is disabled
+[y] "Login" appears and is disabled
+[y] The layout arranges the header, content and footer sections vertically
+[y] All colours and fonts are correct
+[y] The spacing and padding look like the screenshots
+Click "Add Student"
+[y] The "Add Student" window is shown
+[y] The "Add new student" heading is shown
+[y] The student number label and text field are shown
+[y] The student name label and text field are shown
+[y] The attendance label, "Full Time" radio button and "Part Time" radio button are shown
+[y] The scholarship label and checkbox are shown
+[y] The "Cancel" button is shown and enabled
+[y] The "Add" button is shown and disabled
+[y] The layout arranges the header, content and footer sections vertically
+[y] The form is laid out in a GridPane
+[y] All colours and fonts are correct including the error message
+[y] The error message is included in the GridPane, centred horizontally spanning 2 columns
+[y] The spacing and padding look like the screenshots
+Click "Cancel"
+[y] The "Add Student" window is closed
+Click "Add Student" again
+Enter student number 12345678
+[y] The "Add" button remains disabled
+Enter student name Bianca Sladen
+[y] The "Add" button remains disabled
+Select "Full Time"
+[y] The "Add" button becomes enabled
+Select the "Scholarship" checkbox
+Delete the student number and the re-enter it
+[y] The "Add" button becomes disabled and then re-enabled
+Delete the student name and then re-enter it
+[y] The "Add" button becomes disabled and then re-enabled
+Click the "Add" button
+[y] The "Add Student" window is closed
+[y] "12345678 - Bianca Sladen" is shown in the student list in the university window
+Click the "Add Student" button
+Enter details "12345678", "Hugo Aitken", "Full Time" and no scholarship
+Click "Add"
+[y] The window does not close and the error "Student already exists" is shown
+Change the student number to "49287512" and click "Add"
+[y] The "Add Student" window is closed and "49287512 - Hugo Aitken" is immediately added to the student list in the university window
+Add a student "23232323", "Jessica Sneddon", "Part Time", no scholarship
+Add a student "11111111", "Dakota Cavill", "Full Time", scholarship
+[y] These two students are immediately added to the student list in the university window
+Select Bianca Sladen from the list
+[y] At this moment, the "Remove Student" and "Login" buttons become enabled
+Click "Login"
+[y] The "Student" window is shown
+[y] The "Logged in as Bianca Sladen" heading is shown
+[y] The student number label and text (12345678) is shown
+[y] The student attendance label and text ("Full Time") is shown
+[y] The student scholarship label and text ("Yes") is shown
+[y] The "Withdraw" and "Enrol" buttons are both shown and disabled. The "Logout" button is shown and enabled.
+[y] The "My Activities" table shows column headings: Subject, Group, Activity, Day, Start, Duration, Room, Capacity, Enrolled.
+[y] The "My Activities" table is empty and shows "Not enrolled in any activities"
+[y] The subjects ComboBox is shown and it displays the subjects from the model (i.e. "48024 Applications Programming" and "31284 Web Services Development")
+[y] The subject activities table is empty and shows column headings: Subject, Group, Activity, Day, Start, Duration, Room, Capacity, Enrolled.
+[y] The layout arranges the header, content and footer sections vertically
+[y] The "Logged in as ..." heading is in the top left, and the student details GridPane is in the top right
+[y] The "My Activities" heading is aligned left, and the "Withdraw" button is aligned right
+[y] The "Enrol into subject" heading and ComboBox are aligned left, and the "Enrol" button is aligned right
+[y] All colours and fonts are correct
+[y] The spacing and padding look like the screenshots
+Select "48024 Applications Programming" from the subjects ComboBox
+[y] The Subject column shows the correct subject number (and ONLY the subject number) of each activity in the selected subject
+[y] The Group, Activity, Day, Start, Duration, Room, Capacity and Enrolled columns show the corresponding properties from the Activity model data for each activity in the subject
+Select Lec1 activity 1 from the subject activities table
+[y] The "Enrol" button becomes enabled
+Click "Enrol" and make sure Lec1 activity 1 is still selected in the table
+[y] The "Enrol" button becomes disabled
+[y] The selected activity is immediately added to the student's activities and shows in the "My Activities" table
+[y] The "Enrolled" column for the selected activity increases to 1 in both tables
+Select Lec1 activity 1 from the "My Activities" table
+[y] The "Withdraw" button becomes enabled
+Click "Withdraw"
+[y] The selected activity is removed from the "My Activities" table
+[y] The "enrolled" column for that same activity is decreased to 0 in the subject activities table.
+[y] The "Withdraw" button becomes disabled
+Select Lec1 activity 1 from the subject activities table and enrol into it again
+Select Cmp1 activity 1 from the subject activities table and enrol into it
+[y] The "enrolled" column shows 1 for Lec1 activity 1 and 1 for Cmp1 activity 1 in both tables
+Select Cmp1 activity 2 from the subject activities table and enrol into it
+[y] The "enrolled" column shows 1 for Lec1 activity 1, shows 0 for Cmp1 activity 1, and shows 1 for Cmp1 activity 2
+[y] Cmp1 activity 1 is removed from the "My Activities" table and Cmp1 activity 2 is added in its place
+Select "31284 Web Services Development" from the subjects ComboBox
+[y] The table of activities changes to show the activities for this subject (i.e. 1 Lec1 and 4 Cmp1 activities)
+Enrol into Lec1 activity 1 and Cmp1 activity 1
+[y] The "My Activities" table is updated to include these two activities, each with an enrolled column of 1
+Click "Logout"
+[y] The "Student" window is closed
+Login to Bianca Sladen's account again.
+[y] The "Student" window is shown, and the "My Activities" table shows that Bianca is still enrolled in the same 4 activities selected earlier, and the enrolled column shows 1 for each of those activities.
+Click "Logout"
+Login to Hugo Aitken's account
+[y] The heading shows "Logged in as Hugo Aitken"
+[y] The student number is shown as 49287512
+[y] The attendance is shown as "Full Time"
+[y] The scholarship is shown as "No"
+[y] The "My Activities" table shows "Not enrolled in any activities"
+Select Applications Programming from the subjects ComboBox
+[y] It is shown that Lec1 activity 1 and Cmp1 activity 2 each already have one student enrolled
+Enrol Hugo into the same two activities
+[y] It is immediately shown that Lec1 activity 1 and Cmp1 activity 2 now have two students enrolled in each
+Click "Logout"
+Login to Jessica Sneddon's account
+[y] The heading shows "Logged in as Jessica Sneddon", student number shows 23232323, attendance "Part Time", scholarship "Yes"
+Select Applications Programming from the subjects ComboBox
+[y] It is shown that Lec1 activity 1 and Cmp1 activity 2 each already have two students enrolled
+Select Lec1 activity 1
+[y] The "Enrol" button becomes Enabled
+Enrol Jessica into Lec1 activity 1
+[y] This activity is added to the "My Activities" table and the "enrolled" column shows 3. The subject activities list shows 3 students are enrolled into Lec1 activity 1 and 2 students are enrolled into Cmp1 activity 2
+Select Cmp1 activity 2
+[y] The "Enrol" button becomes disabled
+Select Web Services Development from the subjects ComboBox
+[y] The subject activities table shows Lec1 activity 1 and Cmp1 activity 1 each have 1 student enrolled
+Click "Logout"
+From the "University" window, select Bianca Sladen from the list and click "Remove Student"
+[y] The student list in the "University" window is immediately updated to reflect that Bianca was removed
+Login to Jessica Sneddon's account again
+Select Applications Programming from the subjects ComboBox
+[y] It is shown that Lec1 activity 1 now has 2 students enrolled and Cmp1 activity 2 now has 1 student enrolled
+Select Cmp1 activity 2
+[y] The "Enrol" button becomes enabled
+Click "Enrol"
+[y] The selected activity is added to the "My Activities" table and the enrolled column for this activity increases from 1 to 2 in both tables
+Select Web Services Development from the subjects ComboBox
+[y] It is shown that no student is enrolled into any activity in this subject

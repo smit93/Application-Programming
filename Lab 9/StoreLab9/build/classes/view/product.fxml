@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:controller="controller.ProductController"
+		xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" 
+		>
+
+	<Label text="Product" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+	<Text text="${controller.product.name}" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+	<Label text="Stock" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+	<Text text="${controller.product.stock}" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+	<Label text="Price" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+	<Text text="${controller.product.price}" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+	<Label text="Sell" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+	<TextField fx:id="amountTf" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+	<HBox alignment="center_right" GridPane.columnIndex="1" GridPane.rowIndex="4">
+		<Button text="Sell" onAction="#handleSell"/>
+	</HBox>
+	
+	<stylesheets><URL value="@style.css"/></stylesheets>
+	
+</GridPane>

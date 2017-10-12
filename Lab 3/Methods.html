@@ -1,0 +1,476 @@
+
+<!-- saved from url=(0045)http://www.ryanheise.com/java/ap/Methods.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <link rel="stylesheet" type="text/css" name="style" href="./Methods_files/style.css">
+ <style type="text/css"></style></head>
+ <body>
+  <h1>Applications Programming</h1>
+  <h2>Lab 3 - Methods</h2>
+
+  <p><b>The process</b>:</p>
+
+  <ol>
+    <li>Break it down</li>
+    <li>Build it up</li>
+    <li>Submit your project to PLATE</li>
+  </ol>
+
+  <p>In these exercises, we do <u>not</u> require you to test for invalid input.</p>
+
+  <h3 class="specification">Specification #1 (demonstrated by tutor)</h3>
+  <div class="main-class">Main class: <code>ZCount</code></div>
+
+  <p>Read a string. Show the number of "z"'s in the string.</p>
+
+  <h4>Sample I/O</h4>
+  <pre class="io">String: the zebra gazed at the azure sea
+z count = 3
+  </pre>
+
+  <!-- <h4>Words-to-code table</h4> -->
+
+  <!-- <table> -->
+  <!-- 	<thead> -->
+  <!-- 		<tr><th>Word</th><th>Pattern / key code</th></tr> -->
+  <!-- 	</thead> -->
+  <!-- 	<tbody> -->
+  <!-- 		<tr><td>Read a string.</td><td><input></td></tr> -->
+  <!-- 		<tr><td>Show</td><td><input></td></tr> -->
+  <!-- 		<tr><td>the number of "z"'s</td><td><input></td></tr> -->
+  <!-- 		<tr><td>in the string</td><td><input></td></tr> -->
+  <!-- 	</tbody> -->
+  <!-- </table> -->
+
+  <!-- <h4>Break it down</h4> -->
+
+  <!-- <table> -->
+  <!-- 	<thead> -->
+  <!-- 		<tr> -->
+  <!-- 			<th>Level</th> -->
+  <!-- 			<th>Goal</th> -->
+  <!-- 			<th>Method header</th> -->
+  <!-- 			<th>Words-to-code</th> -->
+  <!-- 		</tr> -->
+  <!-- 	</thead> -->
+  <!-- 	<tbody> -->
+  <!-- 		<tr> -->
+  <!-- 			<td><input size="6" value="top"></td> -->
+  <!-- 			<td><textarea cols="20" rows="3" wrap="soft"></textarea></td> -->
+  <!-- 			<td><input size="30" value="public static void main(String[] args)"></td> -->
+  <!-- 			<td><textarea cols="19" rows="5" wrap="soft"></textarea></td> -->
+  <!-- 		</tr> -->
+  <!-- 		<tr> -->
+  <!-- 			<td><input size="6"></td> -->
+  <!-- 			<td><textarea cols="20" rows="3" wrap="soft"></textarea></td> -->
+  <!-- 			<td><input size="30" value="public static ... METHOD(...)"></td> -->
+  <!-- 			<td><textarea cols="19" rows="5" wrap="soft"></textarea></td> -->
+  <!-- 		</tr> -->
+  <!-- 	</tbody> -->
+  <!-- </table> -->
+
+  <h4>Break it down</h4>
+
+  <style>
+    .level h5 {
+      border-bottom: solid 1px black;
+    }
+    .procedures {
+      background: #93c47d;
+    }
+    .functions {
+      background: #f1c131;
+    }
+  </style>
+
+  <div class="level procedures">
+    <h5>PROCEDURES</h5>
+
+    <div style="margin-top:	20px;">
+      <div style="float:	left;	margin-right:	40px;"><b>Level	1</b>:	<input size="6" value="top"></div>
+      <!--	<div	style="float:	left;	margin-right:	40px;"><b>Form</b>:	<input	size="6"	value="procedure"></div>	-->
+      <table>
+        <tbody><tr><td><b>Goal</b></td><td width="350px;"><textarea style="width:	100%;" cols="20" rows="2" wrap="soft"></textarea></td></tr>
+        <tr><td><b>Method	header</b></td><td><input style="width:	100%;" size="30" value="public static void main(String[] args)"></td></tr>
+        <tr><td><b>Plan</b></td><td>&nbsp;{<br><textarea style="margin-left: 20px;" cols="45" rows="3" wrap="soft"></textarea><br>&nbsp;}</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+
+  <div class="level functions">
+    <h5>FUNCTIONS</h5>
+
+    <div style="margin-top:	20px;">
+      <div style="float:	left;	margin-right:	40px;"><b>Level	2</b>:	<input size="6"></div>
+      <!--	<div	style="float:	left;	margin-right:	40px;"><b>Form</b>:	<input	size="6"></div>	-->
+      <table>
+        <tbody><tr><td><b>Goal</b></td><td width="350px;"><textarea style="width:	100%;" cols="20" rows="2" wrap="soft"></textarea></td></tr>
+        <tr><td><b>Method	header</b></td><td><input style="width:	100%;" size="30" value="public static ... method_name(...)"></td></tr>
+        <tr><td><b>Plan</b></td><td>&nbsp;{<br><textarea style="margin-left: 20px;" cols="45" rows="3" wrap="soft"></textarea><br>&nbsp;}</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+
+  <p>Your tutor will work through a solution to this specification.</p>
+
+<!-- 	<h3 class="specification">Specification #2 (demonstrated by tutor)</h3> -->
+<!-- 	<div class="main-class">Main class: <code>LongestVowelStretch</code></div> -->
+<!--  -->
+<!-- 	<p>Read sentences until the user enters "x". Show the longest word in each sentence.</p> -->
+<!--  -->
+<!-- 	<h4>Sample I/O</h4> -->
+<!-- 	<pre class="io"> -->
+<!-- Sentence: It's kind of fun to do the impossible -->
+<!-- Longest word = impossible -->
+<!-- Sentence: Did you think I'd be too stupid to know what a eugoogly is? -->
+<!-- Longest word = eugoogly -->
+<!-- Sentence: x -->
+<!-- 	</pre> -->
+<!--  -->
+<!-- 	<h4>Break it down</h4> -->
+<!--  -->
+<!-- 	<table> -->
+<!-- 		<thead> -->
+<!-- 			<tr> -->
+<!-- 				<th>Level</th> -->
+<!-- 				<th>Goal</th> -->
+<!-- 				<th>Words-to-code</th> -->
+<!-- 				<th>Method header</th> -->
+<!-- 			</tr> -->
+<!-- 		</thead> -->
+<!-- 		<tbody> -->
+<!-- 			<tr> -->
+<!-- 				<td><input size="6"></td> -->
+<!-- 				<td><textarea cols="20" rows="3" wrap="soft"></textarea></td> -->
+<!-- 				<td><textarea cols="19" rows="5" wrap="soft"></textarea></td> -->
+<!-- 				<td><input size="30"></td> -->
+<!-- 			</tr> -->
+<!-- 			<tr> -->
+<!-- 				<td><input size="6"></td> -->
+<!-- 				<td><textarea cols="20" rows="3" wrap="soft"></textarea></td> -->
+<!-- 				<td><textarea cols="19" rows="5" wrap="soft"></textarea></td> -->
+<!-- 				<td><input size="30"></td> -->
+<!-- 			</tr> -->
+<!-- 			<tr> -->
+<!-- 				<td><input size="6"></td> -->
+<!-- 				<td><textarea cols="20" rows="3" wrap="soft"></textarea></td> -->
+<!-- 				<td><textarea cols="19" rows="5" wrap="soft"></textarea></td> -->
+<!-- 				<td><input size="30"></td> -->
+<!-- 			</tr> -->
+<!-- 			<tr> -->
+<!-- 				<td><input size="6"></td> -->
+<!-- 				<td><textarea cols="20" rows="3" wrap="soft"></textarea></td> -->
+<!-- 				<td><textarea cols="19" rows="5" wrap="soft"></textarea></td> -->
+<!-- 				<td><input size="30"></td> -->
+<!-- 			</tr> -->
+<!-- 		</tbody> -->
+<!-- 	</table> -->
+<!--  -->
+<!-- 	<p>Your tutor will work through a solution to this specification. Copy down this solution and submit it to PLATE.</p> -->
+
+  <h3 class="specification">Specification #2 (demonstrated by tutor)</h3>
+  <div class="main-class">Main class: <code>ZWordCount</code></div>
+
+  <p>Consider these sentences:</p>
+
+  <ol>
+    <li>green ideas Zleep furiously</li>
+    <li>a zebra graZed</li>
+    <li>zorro WAZ zore</li>
+    <li>I feel snoozy</li>
+  </ol>
+
+  <p>Show each sentence on a new line. Show the number of words containing a "z".</p>
+
+  <h4>Sample I/O</h4>
+
+  <pre class="io">green ideas Zleep furiously
+a zebra graZed
+zorro WAZ zore
+I feel snoozy
+Words containing a 'z' = 7
+  </pre>
+
+  <!-- <h4>Words-to-code table</h4> -->
+
+  <!-- <table> -->
+  <!-- 	<thead> -->
+  <!-- 		<tr><th>Word</th><th>Pattern / key code</th></tr> -->
+  <!-- 	</thead> -->
+  <!-- 	<tbody> -->
+  <!-- 		<tr><td>Consider these sentences: ...</td><td><input></td></tr> -->
+  <!-- 		<tr><td>Show [...] on a new line</td><td><input></td></tr> -->
+  <!-- 		<tr><td>each sentence</td><td><input></td></tr> -->
+  <!-- 		<tr><td>Show</td><td><input></td></tr> -->
+  <!-- 		<tr><td>the number of</td><td><input></td></tr> -->
+  <!-- 		<tr><td>words containing a 'z'</td><td><input></td></tr> -->
+  <!-- 	</tbody> -->
+  <!-- </table> -->
+
+  <h4>Break it down</h4>
+
+  <!-- <table> -->
+  <!-- 	<thead> -->
+  <!-- 		<tr> -->
+  <!-- 			<th>Level</th> -->
+  <!-- 			<th>Goal</th> -->
+  <!-- 			<th>Method header</th> -->
+  <!-- 			<th>Words-to-code</th> -->
+  <!-- 		</tr> -->
+  <!-- 	</thead> -->
+  <!-- 	<tbody> -->
+  <!-- 		<tr> -->
+  <!-- 			<td><input size="6" value="top"></td> -->
+  <!-- 			<td><textarea cols="20" rows="3" wrap="soft"></textarea></td> -->
+  <!-- 			<td><input size="30" value="public static void main(String[] args)"></td> -->
+  <!-- 			<td><textarea cols="19" rows="5" wrap="soft"></textarea></td> -->
+  <!-- 		</tr> -->
+  <!-- 		<tr> -->
+  <!-- 			<td><input size="6"></td> -->
+  <!-- 			<td><textarea cols="20" rows="3" wrap="soft"></textarea></td> -->
+  <!-- 			<td><input size="30" value="public static ... METHOD(...)"></td> -->
+  <!-- 			<td><textarea cols="19" rows="5" wrap="soft"></textarea></td> -->
+  <!-- 		</tr> -->
+  <!-- 		<tr> -->
+  <!-- 			<td><input size="6"></td> -->
+  <!-- 			<td><textarea cols="20" rows="3" wrap="soft"></textarea></td> -->
+  <!-- 			<td><input size="30" value="public static ... METHOD(...)"></td> -->
+  <!-- 			<td><textarea cols="19" rows="5" wrap="soft"></textarea></td> -->
+  <!-- 		</tr> -->
+  <!-- 		<tr> -->
+  <!-- 			<td><input size="6"></td> -->
+  <!-- 			<td><textarea cols="20" rows="3" wrap="soft"></textarea></td> -->
+  <!-- 			<td><input size="30" value="public static ... METHOD(...)"></td> -->
+  <!-- 			<td><textarea cols="19" rows="5" wrap="soft"></textarea></td> -->
+  <!-- 		</tr> -->
+  <!-- 	</tbody> -->
+  <!-- </table> -->
+
+  <div class="level procedures">
+    <h5>PROCEDURES</h5>
+
+    <div style="margin-top:	20px;">
+      <div style="float:	left;	margin-right:	40px;"><b>Level	1</b>:	<input size="6" value="top"></div>
+      <!--	<div	style="float:	left;	margin-right:	40px;"><b>Form</b>:	<input	size="6"	value="procedure"></div>	-->
+      <table>
+        <tbody><tr><td><b>Goal</b></td><td width="350px;"><textarea style="width:	100%;" cols="20" rows="2" wrap="soft"></textarea></td></tr>
+        <tr><td><b>Method	header</b></td><td><input style="width:	100%;" size="30" value="public static void main(String[] args)"></td></tr>
+        <!-- <tr><td><b>Plan</b></td><td>&nbsp;{<br><textarea	style="margin-left: 20px;" cols="45"	rows="3"	wrap="soft"></textarea><br>&nbsp;}</td></tr> -->
+        <tr><td><b>Plan</b></td><td><textarea style="width: 100%;" cols="45" rows="3" wrap="soft"></textarea></td></tr>
+      </tbody></table>
+    </div>
+  </div>
+
+  <div class="level functions">
+    <h5>FUNCTIONS</h5>
+
+    <div style="margin-top:	20px;">
+      <div style="float:	left;	margin-right:	40px;"><b>Level	2</b>:	<input size="6"></div>
+      <!--	<div	style="float:	left;	margin-right:	40px;"><b>Form</b>:	<input	size="6"></div>	-->
+      <table>
+        <tbody><tr><td><b>Goal</b></td><td width="350px;"><textarea style="width:	100%;" cols="20" rows="2" wrap="soft"></textarea></td></tr>
+        <tr><td><b>Method	header</b></td><td><input style="width:	100%;" size="30" value="public static ... method_name(...)"></td></tr>
+        <!-- <tr><td><b>Plan</b></td><td>&nbsp;{<br><textarea	style="margin-left: 20px;" cols="45"	rows="3"	wrap="soft"></textarea><br>&nbsp;}</td></tr> -->
+        <tr><td><b>Plan</b></td><td><textarea style="width: 100%;" cols="45" rows="3" wrap="soft"></textarea></td></tr>
+      </tbody></table>
+    </div>
+    <div style="margin-top:	20px;">
+      <div style="float:	left;	margin-right:	40px;"><b>Level	3</b>:	<input size="6"></div>
+      <!--	<div	style="float:	left;	margin-right:	40px;"><b>Form</b>:	<input	size="6"></div>	-->
+      <table>
+        <tbody><tr><td><b>Goal</b></td><td width="350px;"><textarea style="width:	100%;" cols="20" rows="2" wrap="soft"></textarea></td></tr>
+        <tr><td><b>Method	header</b></td><td><input style="width:	100%;" size="30" value="public static ... method_name(...)"></td></tr>
+        <!-- <tr><td><b>Plan</b></td><td>&nbsp;{<br><textarea	style="margin-left: 20px;" cols="45"	rows="3"	wrap="soft"></textarea><br>&nbsp;}</td></tr> -->
+        <tr><td><b>Plan</b></td><td><textarea style="width: 100%;" cols="45" rows="3" wrap="soft"></textarea></td></tr>
+      </tbody></table>
+    </div>
+    <div style="margin-top:	20px;">
+      <div style="float:	left;	margin-right:	40px;"><b>Level	4</b>:	<input size="6"></div>
+      <!--	<div	style="float:	left;	margin-right:	40px;"><b>Form</b>:	<input	size="6"></div>	-->
+      <table>
+        <tbody><tr><td><b>Goal</b></td><td width="350px;"><textarea style="width:	100%;" cols="20" rows="2" wrap="soft"></textarea></td></tr>
+        <tr><td><b>Method	header</b></td><td><input style="width:	100%;" size="30" value="public static ... method_name(...)"></td></tr>
+        <!-- <tr><td><b>Plan</b></td><td>&nbsp;{<br><textarea	style="margin-left: 20px;" cols="45"	rows="3"	wrap="soft"></textarea><br>&nbsp;}</td></tr> -->
+        <tr><td><b>Plan</b></td><td><textarea style="width: 100%;" cols="45" rows="3" wrap="soft"></textarea></td></tr>
+      </tbody></table>
+    </div>
+  </div>
+
+  <p>Your tutor will work through a solution to this specification.</p>
+
+  <h3 class="specification">Specification #3 (Student exercise)</h3>
+  <div class="main-class">Main class: <code>StretchWith2Vowels</code></div>
+
+  <!-- <p>Count the number of words in a sentence that contain exactly two vowels after a first "z". There may be multiple spaces between words, and a letter may be upper or lower case. Show the number of words in each sentence that match the pattern. Keep reading sentences until the user enters "*".</p> -->
+
+  <!-- <p>Show the number of words in each sentence that contain exactly 2 vowels between any pair of z's with no z between them. The sentences contain no punctuation, the words are separated by one or more spaces, and the characters may be upper or lower case. Keep reading sentences until the user enters "*".</p> -->
+  <p>Read sentences from the user until * is entered. Show the number of words in each sentence that contain a stretch of non-z characters with exactly 2 vowels. A stretch starts from the start of the word or after a 'z'. A stretch terminates just before another 'z' or at the end of the word.</p>
+  <p>Examples:</p>
+  <ol>
+    <li>Matching words: zoo, azozooza, GONZALEZ</li>
+    <li>Non-matching words: ozo, azoooza</li>
+  </ol>
+  <p>The sentences contain no punctuation, the words are separated by one or more spaces, and the characters may be upper or lower case. Keep reading sentences until the user enters "*".</p>
+
+  <h4>Sample I/O:</h4>
+
+  <pre class="io">Sentence: azoooza azooza zoo azoo
+Matching words = 3
+Sentence: GONZALEZ passes the ball to VAZQUEZ
+Matching words = 3
+Sentence: azozototzeti
+Matching words = 1
+Sentence: *
+  </pre>
+
+  <h4>Visualisation</h4>
+
+  <style>
+    .segments td { width: 15px; height: 15px; text-align: center; }
+    .segment { background: yellow; }
+  </style>
+
+  <p>A word matches if... <input size="40"></p>
+
+  <p>A word:</p>
+  <table class="segments">
+    <tbody><tr>
+      <td class="segment"></td>
+      <td class="segment"></td>
+      <td class="segment"></td>
+      <td class="z">z</td>
+      <td class="segment"></td>
+      <td class="segment"></td>
+      <td class="segment"></td>
+      <td class="segment"></td>
+      <td class="z">z</td>
+      <td class="segment"></td>
+      <td class="segment"></td>
+      <td class="segment"></td>
+      <!-- <td class="z">z</td> -->
+      <!-- <td class="segment"></td> -->
+      <!-- <td class="segment"></td> -->
+      <!-- <td class="segment"></td> -->
+      <!-- <td class="segment"></td> -->
+      <!-- <td class="segment"></td> -->
+      <!-- <td class="z">z</td> -->
+      <!-- <td class="segment"></td> -->
+      <!-- <td class="segment"></td> -->
+      <!-- <td class="segment"></td> -->
+      <!-- <td class="segment"></td> -->
+      <!-- <td class="z">z</td> -->
+      <!-- <td class="segment"></td> -->
+      <!-- <td class="segment"></td> -->
+      <!-- <td class="segment"></td> -->
+      <!-- <td class="segment"></td> -->
+    </tr>
+  </tbody></table>
+
+  <h4>Break it down</h4>
+
+  <!-- <table> -->
+  <!-- 	<thead> -->
+  <!-- 		<tr> -->
+  <!-- 			<th>Level</th> -->
+  <!-- 			<th>Goal</th> -->
+  <!-- 			<th>Method header</th> -->
+  <!-- 			<th>Words-to-code</th> -->
+  <!-- 		</tr> -->
+  <!-- 	</thead> -->
+  <!-- 	<tbody> -->
+  <!-- 		<tr> -->
+  <!-- 			<td><input size="6" value="top"></td> -->
+  <!-- 			<td><textarea cols="20" rows="3" wrap="soft"></textarea></td> -->
+  <!-- 			<td><textarea cols="19" rows="5" wrap="soft"></textarea></td> -->
+  <!-- 			<td><input size="30" value="public static void main(String[] args)"></td> -->
+  <!-- 		</tr> -->
+  <!-- 		<tr> -->
+  <!-- 			<td><input size="6"></td> -->
+  <!-- 			<td><textarea cols="20" rows="3" wrap="soft"></textarea></td> -->
+  <!-- 			<td><textarea cols="19" rows="5" wrap="soft"></textarea></td> -->
+  <!-- 			<td><input size="30"></td> -->
+  <!-- 		</tr> -->
+  <!-- 		<tr> -->
+  <!-- 			<td><input size="6"></td> -->
+  <!-- 			<td><textarea cols="20" rows="3" wrap="soft"></textarea></td> -->
+  <!-- 			<td><textarea cols="19" rows="5" wrap="soft"></textarea></td> -->
+  <!-- 			<td><input size="30"></td> -->
+  <!-- 		</tr> -->
+  <!-- 		<tr> -->
+  <!-- 			<td><input size="6"></td> -->
+  <!-- 			<td><textarea cols="20" rows="3" wrap="soft"></textarea></td> -->
+  <!-- 			<td><textarea cols="19" rows="5" wrap="soft"></textarea></td> -->
+  <!-- 			<td><input size="30"></td> -->
+  <!-- 		</tr> -->
+  <!-- 		<tr> -->
+  <!-- 			<td><input size="6"></td> -->
+  <!-- 			<td><textarea cols="20" rows="3" wrap="soft"></textarea></td> -->
+  <!-- 			<td><textarea cols="19" rows="5" wrap="soft"></textarea></td> -->
+  <!-- 			<td><input size="30"></td> -->
+  <!-- 		</tr> -->
+  <!-- 	</tbody> -->
+  <!-- </table> -->
+
+  <div class="level procedures">
+    <h5>PROCEDURES</h5>
+
+    <div style="margin-top:	20px;">
+      <div style="float:	left;	margin-right:	40px;"><b>Level	1</b>:	<input size="6" value="top"></div>
+      <!--	<div	style="float:	left;	margin-right:	40px;"><b>Form</b>:	<input	size="6"	value="procedure"></div>	-->
+      <table>
+        <tbody><tr><td><b>Goal</b></td><td width="350px;"><textarea style="width:	100%;" cols="20" rows="2" wrap="soft"></textarea></td></tr>
+        <tr><td><b>Method	header</b></td><td><input style="width:	100%;" size="30" value="public static void main(String[] args)"></td></tr>
+        <!-- <tr><td><b>Plan</b></td><td>&nbsp;{<br><textarea	style="margin-left: 20px;" cols="45"	rows="3"	wrap="soft"></textarea><br>&nbsp;}</td></tr> -->
+        <tr><td><b>Plan</b></td><td><textarea style="width: 100%;" cols="45" rows="3" wrap="soft"></textarea></td></tr>
+      </tbody></table>
+    </div>
+  </div>
+
+  <div class="level functions">
+    <h5>FUNCTIONS</h5>
+
+    <div style="margin-top:	20px;">
+      <div style="float:	left;	margin-right:	40px;"><b>Level	2</b>:	<input size="6"></div>
+      <!--	<div	style="float:	left;	margin-right:	40px;"><b>Form</b>:	<input	size="6"></div>	-->
+      <table>
+        <tbody><tr><td><b>Goal</b></td><td width="350px;"><textarea style="width:	100%;" cols="20" rows="2" wrap="soft"></textarea></td></tr>
+        <tr><td><b>Method	header</b></td><td><input style="width:	100%;" size="30" value="public static ... method_name(...)"></td></tr>
+        <!-- <tr><td><b>Plan</b></td><td>&nbsp;{<br><textarea	style="margin-left: 20px;" cols="45"	rows="3"	wrap="soft"></textarea><br>&nbsp;}</td></tr> -->
+        <tr><td><b>Plan</b></td><td><textarea style="width: 100%;" cols="45" rows="3" wrap="soft"></textarea></td></tr>
+      </tbody></table>
+    </div>
+    <div style="margin-top:	20px;">
+      <div style="float:	left;	margin-right:	40px;"><b>Level	3</b>:	<input size="6"></div>
+      <!--	<div	style="float:	left;	margin-right:	40px;"><b>Form</b>:	<input	size="6"></div>	-->
+      <table>
+        <tbody><tr><td><b>Goal</b></td><td width="350px;"><textarea style="width:	100%;" cols="20" rows="2" wrap="soft"></textarea></td></tr>
+        <tr><td><b>Method	header</b></td><td><input style="width:	100%;" size="30" value="public static ... method_name(...)"></td></tr>
+        <!-- <tr><td><b>Plan</b></td><td>&nbsp;{<br><textarea	style="margin-left: 20px;" cols="45"	rows="3"	wrap="soft"></textarea><br>&nbsp;}</td></tr> -->
+        <tr><td><b>Plan</b></td><td><textarea style="width: 100%;" cols="45" rows="3" wrap="soft"></textarea></td></tr>
+      </tbody></table>
+    </div>
+    <div style="margin-top:	20px;">
+      <div style="float:	left;	margin-right:	40px;"><b>Level	4</b>:	<input size="6"></div>
+      <!--	<div	style="float:	left;	margin-right:	40px;"><b>Form</b>:	<input	size="6"></div>	-->
+      <table>
+        <tbody><tr><td><b>Goal</b></td><td width="350px;"><textarea style="width:	100%;" cols="20" rows="2" wrap="soft"></textarea></td></tr>
+        <tr><td><b>Method	header</b></td><td><input style="width:	100%;" size="30" value="public static ... method_name(...)"></td></tr>
+        <!-- <tr><td><b>Plan</b></td><td>&nbsp;{<br><textarea	style="margin-left: 20px;" cols="45"	rows="3"	wrap="soft"></textarea><br>&nbsp;}</td></tr> -->
+        <tr><td><b>Plan</b></td><td><textarea style="width: 100%;" cols="45" rows="3" wrap="soft"></textarea></td></tr>
+      </tbody></table>
+    </div>
+    <div style="margin-top:	20px;">
+      <div style="float:	left;	margin-right:	40px;"><b>Level	5</b>:	<input size="6"></div>
+      <!--	<div	style="float:	left;	margin-right:	40px;"><b>Form</b>:	<input	size="6"></div>	-->
+      <table>
+        <tbody><tr><td><b>Goal</b></td><td width="350px;"><textarea style="width:	100%;" cols="20" rows="2" wrap="soft"></textarea></td></tr>
+        <tr><td><b>Method	header</b></td><td><input style="width:	100%;" size="30" value="public static ... method_name(...)"></td></tr>
+        <!-- <tr><td><b>Plan</b></td><td>&nbsp;{<br><textarea	style="margin-left: 20px;" cols="45"	rows="3"	wrap="soft"></textarea><br>&nbsp;}</td></tr> -->
+        <tr><td><b>Plan</b></td><td><textarea style="width: 100%;" cols="45" rows="3" wrap="soft"></textarea></td></tr>
+      </tbody></table>
+    </div>
+  </div>
+
+
+ 
+
+</body></html>

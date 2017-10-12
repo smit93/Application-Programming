@@ -1,0 +1,151 @@
+body, p, td { font-family: Sans-Serif; }
+
+h1 { background: #acf; }
+
+/* h2 { margin-top: 40px; } */
+
+a:link, a:visited { color: #00f; }
+a:hover { background: yellow; }
+
+.objective { font-weight: bold; }
+.toedit { font-weight: bold; }
+.challenge { font-weight: bold; font-style: italic; }
+.hint { color: #f00; }
+.term { font-weight: bold; }
+
+.specification { margin-bottom: 0px; }
+
+pre.io {
+	border: solid 2px black;
+	display: table-cell;
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+fieldset { border:2px solid black }
+
+table.days th { border-right: solid 1px black; }
+table.days td { width: 10px; height: 10px; }
+
+/* legend { */
+/* 	padding: 0.2em 0.5em; */
+/* 	border: 1px solid green; */
+/* 	color: green; */
+/* 	font-size: 20px; */
+/* 	font-weight: bold; */
+/* 	text-align: right; */
+/* } */
+
+/* pre */
+/* { */
+/*  font-size: 1.1em; */
+/*  color: #222; */
+/*  padding-left: 10px; */
+/*  padding-top: 10px; */
+/* 	border: solid 1px #55f; */
+/* } */
+
+.hidden
+{
+ font-size: 1.1em;
+ color: #f8f8f1;
+ padding-left: 10px;
+ background-color: #f8f8f8;
+ font-weight: bold;
+}
+
+.shidden
+{
+ color: #f8f8f8;
+ background-color: #f8f8f8;
+ font-weight: bold;
+ border: solid 1px blue;
+}
+
+
+pre.copy
+{
+ border: dashed 2px #aaa;
+}
+
+.plaincode, code
+{
+ font-size: 1.1em;
+ color: #00007f;
+}
+
+.exp
+{
+ color: #0000ff;
+ font-weight: bold;
+}
+
+.literal
+{
+ color: #0f0;
+ background-color: #111;
+ font-weight: bold;
+}
+
+.type
+{
+ color: #337000;
+ font-weight: bold;
+}
+
+table { border-collapse: collapse; border: solid 1px black; }
+table > thead > tr { border: solid 1px black; }
+table td { border-right: solid 1px black; }
+
+.tabsec { font-family: serif; font-weight; normal; font-style: italic; background: #d0d0d0; border: solid 1px black; font-size: 16pt; }
+
+.code
+{
+ font-family: monospace;
+}
+
+.input
+{
+ font-style: italic;
+ color: #390;
+ font-weight: bold;
+}
+
+
+body > ol.exercises { counter-reset: excount; }
+body > ol.exercises > li { list-style-type: none; }
+body > ol.exercises > li:before { counter-increment: excount; content: "Exercise " counter(excount) ". "; color: #0000bf; font-weight: bold; }
+
+.box
+{
+ border: solid 1px black;
+}
+
+.highlight
+{
+ border: solid 1px black;
+ background: yellow;
+ color: black;
+}
+
+.hwdiv
+{
+ margin-top: 40px;
+ padding: 5px;
+ border-top: dashed 2px #999;
+ border-bottom: dashed 2px #999;
+ font-weight: bold;
+ font-size: 24px;
+}
+
+.hwsub
+{
+ font-size: 17px;
+ font-style: italic;
+}
+
+.static
+{
+ color: red;
+}

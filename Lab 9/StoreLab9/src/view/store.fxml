@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:controller="controller.StoreController"
+		xmlns:fx="http://javafx.com/fxml" spacing="10" 
+		>
+
+	<Text text="Store"/>
+
+	<!-- insert a list view here with width 250 and height 150 -->
+        <ListView fx:id="productLv" prefWidth="250" prefHeight="150" items="${controller.store.products}">
+            <placeholder><Label text="No Products"/></placeholder>
+        </ListView>
+        <TableView fx:id="tblv">
+            <columns>
+                <TableColumn text="a">
+                    <cellValueFactory><javafx.scene.control.cell.PropertyValueFactory property="name"/></cellValueFactory>
+                </TableColumn>
+                <TableColumn text="b">
+                    <cellValueFactory><javafx.scene.control.cell.PropertyValueFactory property="price"/></cellValueFactory>
+                </TableColumn>
+
+            </columns>
+        </TableView>
+            
+        
+	<HBox alignment="center">
+		<Button text="View" onAction="#handleView"/>
+	</HBox>
+	<HBox>
+		<Label text="Cash Register: "/>
+		<Text fx:id="cashTxt" text="${'$'+controller.store.cashRegister.cash}"/>
+	</HBox>
+	
+	<stylesheets><URL value="@style.css"/></stylesheets>
+	
+</VBox>

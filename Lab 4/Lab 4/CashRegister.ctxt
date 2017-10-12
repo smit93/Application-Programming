@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=CashRegister()
+comment1.params=money
+comment1.target=void\ add(double)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=\r\n\ Return\ a\ string\ in\ the\ form\:\r\n\r\n\ Cash\:\ $[cash]\r\n\r\n\ e.g.\ "Cash\:\ $29.90"\r\n
+comment3.params=amount
+comment3.target=java.lang.String\ formatted(double)
+numComments=4

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=name\ stock\ price
+comment0.target=Product(java.lang.String,\ int,\ double)
+comment1.params=n
+comment1.target=double\ sell(int)
+comment1.text=\r\n\ This\ pseudo-procedure\ sells\ "n"\ amount\ of\ stock.\r\n\ The\ stock\ should\ decrease\ by\ "n".\r\n\r\n\ This\ method\ also\ returns\ the\ money\ earned\ from\ the\ sale.\r\n\r\n\ This\ is\ a\ rare\ occasion\ where\ a\ procedure\ returns\ something.\r\n
+comment2.params=n
+comment2.target=void\ restock(int)
+comment2.text=\r\n\ Add\ "n"\ amount\ to\ this\ product's\ stock.\r\n
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment3.text=\r\n\ Return\ a\ string\ in\ the\ form\:\r\n\r\n\ [stock]\ [name]\ at\ $[price]\r\n\r\n\ e.g.\ "200\ Sticky\ tape\ at\ $2.99"\r\n\r\n\ DO\ NOT\ hard\ code\ the\ data\ in\ this\ string\r\n\ or\ you\ will\ be\ penalised\ for\ a\ spoof.\r\n
+numComments=4

@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=In()
+comment0.text=\r\n\ The\ constructor\ is\ private\ because\ no\ instances\ of\ this\r\n\ class\ should\ be\ created.\ All\ methods\ are\ static\ and\ can\r\n\ be\ directly\ invoked\ on\ the\ class\ itself.\r\n
+comment1.params=
+comment1.target=java.lang.String\ nextLine()
+comment1.text=\r\n\ Read\ the\ next\ line\ of\ text.\r\n\r\n\ @return\ the\ line\ as\ a\ String\r\n
+comment2.params=
+comment2.target=int\ nextInt()
+comment2.text=\r\n\ Read\ the\ next\ line\ as\ an\ integer.\r\n\r\n\ @return\ the\ integer\ that\ was\ read\r\n
+comment3.params=
+comment3.target=double\ nextDouble()
+comment3.text=\r\n\ Read\ the\ next\ line\ as\ a\ double.\r\n\r\n\ @return\ the\ double\ that\ was\ read\r\n
+comment4.params=
+comment4.target=char\ nextChar()
+comment4.text=\r\n\ Read\ the\ first\ character\ of\ the\ next\ line\ of\ text.\r\n\r\n\ @return\ the\ character\ that\ was\ read\r\n
+numComments=5

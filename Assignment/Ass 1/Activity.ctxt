@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=subject\ group\ number\ day\ start\ duration\ room\ capacity
+comment0.target=Activity(Subject,\ java.lang.String,\ int,\ java.lang.String,\ int,\ int,\ java.lang.String,\ int)
+comment1.params=
+comment1.target=java.lang.String\ getSubject()
+comment2.params=
+comment2.target=int\ subNumber()
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment4.params=start
+comment4.target=java.lang.String\ formatted(int)
+numComments=5

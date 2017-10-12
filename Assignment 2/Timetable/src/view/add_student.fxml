@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:controller="controller.Add_studentController" xmlns:fx="http://javafx.com/fxml" > 
+    <stylesheets>
+        <URL value="@style.css"/>
+    </stylesheets>
+    <HBox  spacing="10" styleClass="heading">  
+        <Text text="Add New Student" styleClass="heading"/>
+    </HBox>
+    <HBox styleClass="content">
+        <GridPane  alignment="center" hgap="10" vgap="10" styleClass="grid" >
+            <padding>
+                <Insets top="25" right="25" bottom="10" left="25"/>
+            </padding>
+            <Label text="Student number:" styleClass="label" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <TextField fx:id="SnumberTf" GridPane.columnIndex="1" GridPane.rowIndex="0"/>  
+            <Label text="Student name:" styleClass="label" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <TextField fx:id="SnameTf" GridPane.columnIndex="1" GridPane.rowIndex="1"/>  
+            <Label text="Attendence:" styleClass="label" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <HBox spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                <fx:define>
+                    <ToggleGroup fx:id="attendenceTg"/>
+                </fx:define>
+                <RadioButton text="Full Time" userData="ft" toggleGroup="$attendenceTg"/>
+                <RadioButton text="Part Time" userData="pt" toggleGroup="$attendenceTg"/> 
+            </HBox>
+            <Label text="Scholarship:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+            <CheckBox fx:id="scholarshipCb" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+            <HBox alignment="center" GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.columnSpan="2">
+                <Label  fx:id="error"   styleClass="error"/> 
+            </HBox>
+        </GridPane>
+    </HBox>
+    <HBox spacing ="10" alignment="center" styleClass="footer">
+        <Button text="Cancel" fx:id="cancelBtn" onAction="#handleCancel"  styleClass="button"/>
+        <Button text="Add" fx:id="addBtn" onAction="#handleAdd"  disable="true" styleClass="button"/>
+    </HBox>   
+</VBox>
